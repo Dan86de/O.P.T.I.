@@ -11,6 +11,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar";
 import { Button } from "@/components/button";
+import test from "@/lib/openAI";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  test();
   return (
     <html lang="en">
       <body className={cn("min-h-screen bg-background font-sans antialiased flex flex-col ", fontSans.variable)}>
