@@ -25,12 +25,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={cn("min-h-screen bg-background font-sans antialiased flex flex-col ", fontSans.variable)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <header className="p-4 flex items-center justify-between border-b-[1px] border-border">
-            <Link href={"/"}>
-              <Avatar>
-                <AvatarImage src={"http://localhost:3000/avatar.png"} />
-                <AvatarFallback>OP</AvatarFallback>
-              </Avatar>
-            </Link>
+            <Button asChild variant="outline" size="icon" className="rounded-full p-5">
+              <Link href={"/"}>
+                <Avatar>
+                  <AvatarImage src={"http://localhost:3000/avatar.png"} />
+                  <AvatarFallback>OP</AvatarFallback>
+                </Avatar>
+              </Link>
+            </Button>
             <div className="flex items-center gap-4">
               <Button asChild variant="outline" size="icon">
                 <Link href={"/settings"}>
