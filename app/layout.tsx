@@ -1,16 +1,14 @@
-import "./globals.css";
-import avatar from "../public/avatar.png";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Image from "next/image";
-import { RiDivideLine, RiEqualizerLine, RiSunFoggyLine, RiSunLine } from "react-icons/ri";
-import Link from "next/link";
-import { fontSans } from "@/lib/fonts";
-import { cn } from "@/lib/utils";
-import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/mode-toggle";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar";
 import { Button } from "@/components/button";
+import { ModeToggle } from "@/components/mode-toggle";
+import { ThemeProvider } from "@/components/theme-provider";
+import { fontSans } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Link from "next/link";
+import { RiEqualizerLine } from "react-icons/ri";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
